@@ -9,7 +9,7 @@ const ToDo = ({ todo, dispatch }) => {
 	};
 
 	return (
-		<div>
+		<div className='ListItemsParent'>
 			<div className='ListItems'>
 				{todo.completed ? '✅' : '👉'}
 				<h3

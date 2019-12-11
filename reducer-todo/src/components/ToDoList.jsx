@@ -8,10 +8,12 @@ const ToDoList = () => {
 
 	return (
 		<div className='TheToDoList'>
-			<ToDoForm dispatch={dispatch} />
-			{state.map((todo) => {
-				return <ToDo key={todo.id} todo={todo} dispatch={dispatch} />;
-			})}
+			<div className='ChildOfTheToDoList'>
+				<ToDoForm dispatch={dispatch} />
+				{state.map((todo) => {
+					return <ToDo key={todo.id} todo={todo} dispatch={dispatch} />;
+				})}
+			</div>
 		</div>
 	);
 };
